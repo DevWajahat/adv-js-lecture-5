@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid d-flex  justify-content-center">
+        
+<div class="col-md-6" style="background-color: bisque;" >
+    <h3 class="text-primary">How to Restrict Password Length Requirement</h3>
+    <hr style="border-top:1px dotted #c23131;"/>
+
+
+<div class="col-md-6">
+
+    <div class="d-flex  justify-content-center">
+        <form style="margin: 5px;">
+            <div class="form-group" >
+                <label>Username</label>
+                <input type="text" id="username" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" id="password" onkeyup="passwordValidate(this)"/>
+            </div>
+            <span id="chk_length" class="alert-danger" style="display:none;">X Password must be a 11 characters long</span>
+            <br /><br />
+            
+            <center><button type="button" id="submit" onclick="submitUser();" class="btn btn-primary" disabled="disabled">Submit</button></center>
+        </form>
+
+</div>
+
+
+</div>
+
+      </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
